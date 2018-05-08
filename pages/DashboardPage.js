@@ -10,7 +10,7 @@ export default class DashboardPage extends React.Component {
         return(
             <Container>
                 <Header>
-                    <Text>Welcome to Eat Neat Your Feed FiX</Text>
+                    <Text style={{fontFamily: "Roboto-medium"}}>Welcome to Eat Neat Your Feed FiX</Text>
                 </Header>
                 <Content />
                 <Footer>
