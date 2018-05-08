@@ -1,10 +1,11 @@
 import React from 'react';
 import { StyleSheet } from 'react-native';
+
 import { Container, Header, Footer, FooterTab, Content, Button, Text, Icon } from 'native-base'; 
 
 
 export default class DashboardPage extends React.Component {
-    
+
     render(){
         return(
             <Container>

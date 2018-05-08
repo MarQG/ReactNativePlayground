@@ -2,14 +2,21 @@ import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Container, Content, Header, Button, Input, Form, Label, Item } from 'native-base';
 import LoginForm from './components/LoginForm';
+import { Font } from expo;
 import DashboardPage from './pages/DashboardPage';
 
 export default class App extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      isLoggedIn: false
+      isLoggedIn: false,
+      fontLoaded: false
     }
+  }
+  componentDidMount() {
+    Font.loadAsync({
+      'Roboto_medium' : require('./assets/Roboto-Medium.ttf')
+    })
   }
 
   onHandleLogin = (email, password) => {
@@ -39,5 +46,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     justifyContent: 'center',
+    fontFamily: 'Roboto_medium' 
   },
 });
