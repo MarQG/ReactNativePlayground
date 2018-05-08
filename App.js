@@ -22,12 +22,12 @@ export default class App extends React.Component {
     }
 
   onHandleLogin = (email, password) => {
-    alert("You clicked Login with this email: " + email + " and your password was: " + password);
+    ("You clicked Login with this email: " + email + " and your password was: " + password);
     this.setState({ isLoggedIn: !this.state.isLoggedIn });
   }
 
   onHandleLogout = () => {
-    alert("Logging you out.");
+    ("Logging you out.");
     this.setState({ isLoggedIn: false});
   }
 
